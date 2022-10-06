@@ -1,0 +1,15 @@
+{
+  "name": "svelte-web3-connect",
+  "version": "1.0.0",
+  "description": "small set of tools used to easily connect an injected wallet (Metamask, Tally Oh!, Coinbase, ...), when creating a web3 wesbite with svelte.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": ["svelte", "web3", "ethereum", "ethers.js", "wallet connect"],
+  "author": "Stendhal",
+  "license": "MIT",
+  "peerDependencies": {
+    "svelte": "^3.50.1"
+  }
+}
