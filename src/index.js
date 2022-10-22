@@ -55,7 +55,11 @@ async function initSigner() {
 			// null if disconnected
 			signerAddress.set(null);
 		}
-	} catch (e) {}
+	} catch (e) {
+		connected.set(false);
+		signer.set(null);
+		signerAddress.set(null);
+	}
 }
 
 /**
@@ -104,6 +108,7 @@ export async function connectAccount() {
  */
 export function disconnect() {
 	localStorage.removeItem('wallet:accountConnected');
+	connected.set(false);
 	signer.set(null);
 	signerAddress.set(null);
 }
